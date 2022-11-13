@@ -1,13 +1,5 @@
-# Modules for connecting with the API
 
-# import random
-# import markdown.extensions.fenced_code
-import numpy as np
 import pandas as pd
-# import requests
-from flask import Flask, jsonify, request
-# import tool.sql_queries as esecuele
-# from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from sql_connection import engine
 
 
@@ -36,11 +28,18 @@ def get_avg_name (name):
     df = pd.read_sql_query(query, engine)
     return df.to_dict(orient="records")
 
+def get_top_five (likes_retweets_replies):
+    query = f"""SELECT tweet, name, {likes_retweets_replies} FROM queen_sentiment
+	ORDER BY {likes_retweets_replies} DESC
+    LIMIT 10"""
+    df = pd.read_sql_query(query, engine)
+    return df.to_dict(orient="records")
 
-# def insert_one_row (scene, character_name, dialogue):
-#     query = f"""INSERT INTO users
-#     (scene, character_name, dialogue) 
-#     VALUES ({scene}, '{character_name}', '{dialogue}');
-#     """
-#     engine.execute(query)
-#     return f"Correctly introduced!"
+
+def insert_one_row (name, tweet, compound):
+    query = f"""INSERT INTO queen_sentiment
+    (name, tweet, compound) 
+    VALUES ({name}, '{tweet}', '{compound}');
+    """
+    engine.execute(query)
+    return f"Correctly introduced!"
