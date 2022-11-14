@@ -3,7 +3,7 @@ import random
 import pandas as pd
 import requests as re
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-from tool.sql_connection import engine
+from src.sql_connection import engine
 
 sia = SentimentIntensityAnalyzer()
 

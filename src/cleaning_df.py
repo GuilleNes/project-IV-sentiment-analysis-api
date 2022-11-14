@@ -1,5 +1,4 @@
 import pandas as pd
-import re
 import os
 
 import nltk
@@ -14,11 +13,7 @@ import sqlalchemy as alch
 from getpass import getpass
 import cleaning_functions as cleafun
 
-
-# 
 import numpy as np
-import pandas as pd
-from os import path
 from PIL import Image
 import matplotlib.pyplot as plt
 
@@ -72,16 +67,12 @@ df.to_csv("../data/queen_sentiment.csv", index= False)
 
 
 
-# Start with one review:
+# The last step we are going to do is a Wordcloud image with the most common words from one of the tweets.
+
 mask = np.array(Image.open("../data/Queen.jpg"))
 
 text = df['tweet_cleaned'][4]
-
-# Create and generate a word cloud image:
-
-
-# The las step we are going to do is a Wordcloud image with the most common words from one of the tweets.
-#                 
+                
 wordcloud = WordCloud(
     mask = mask,
     background_color = "black",
@@ -94,4 +85,5 @@ wordcloud = WordCloud(
 plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis("off")
 plt.show()
+
 plt.savefig("../Data/queen_figure.png", dpi=300)
