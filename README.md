@@ -1,4 +1,4 @@
-![](C:/Users/gnsg3/Desktop/Ironhack/Projects/Project_4.0/project-IV-sentiment-analysis-api/data/Portada.png)
+![](https://github.com/GuilleNes/project-IV-sentiment-analysis-api/blob/main/data/Portada.png)
 
 
  ## PROJECT IV SENTIMENT ANALYSIS API
