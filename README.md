@@ -21,31 +21,31 @@ First of all, I started with a database from [kaggle](https://www.kaggle.com/) w
 
 
 
-![](C:/Users/gnsg3/Desktop/Ironhack/Projects/Project_4.0/project-IV-sentiment-analysis-api/data/Regex.jpg)
+![](https://github.com/GuilleNes/project-IV-sentiment-analysis-api/blob/main/data/Regex.jpg)
 
 
 **2. Sentiment Analysis**
 
 Once I had the dataframe cleaned, added some columns for the sentiment analysis using some functions created for this.
-![](C:/Users/gnsg3/Desktop/Ironhack/Projects/Project_4.0/project-IV-sentiment-analysis-api/data/Sentiment_analysis.jpg)
+![](https://github.com/GuilleNes/project-IV-sentiment-analysis-api/blob/main/data/Sentiment_analysis.jpg)
 
-![Alt text](C:/Users/gnsg3/Desktop/Ironhack/Projects/Project_4.0/project-IV-sentiment-analysis-api/data/Sentiment_df.jpg)
+![Alt text](https://github.com/GuilleNes/project-IV-sentiment-analysis-api/blob/main/data/Sentiment_df.jpg)
 
 **3. Upload to MySQL**
 
 Once cleaned and with the new columns added, I used a query to upload it to SQL
 
-![Alt text](C:/Users/gnsg3/Desktop/Ironhack/Projects/Project_4.0/project-IV-sentiment-analysis-api/data/Mysql_query.jpg)
+![Alt text](https://github.com/GuilleNes/project-IV-sentiment-analysis-api/blob/main/data/Mysql_query.jpg)
 
 
 **4. Querying MySQL and uploading to the API**
 
 After creating the connection with MySQL and the API, I constructed the different query functions for the data analysis:
 
-![Alt text](C:/Users/gnsg3/Desktop/Ironhack/Projects/Project_4.0/project-IV-sentiment-analysis-api/data/Querying_functions.jpg)
+![Alt text](https://github.com/GuilleNes/project-IV-sentiment-analysis-api/blob/main/data/Querying_functions.jpg)
 
 *****Despite I already did it before, I queried in the function below using the Sentiment Analysis on the function*****
-![Alt text](C:/Users/gnsg3/Desktop/Ironhack/Projects/Project_4.0/project-IV-sentiment-analysis-api/data/API_functions.jpg)
+![Alt text](https://github.com/GuilleNes/project-IV-sentiment-analysis-api/blob/main/data/API_functions.jpg)
 
 I tried all the different functions using the web browser and checking the results.
 
@@ -54,23 +54,23 @@ I tried all the different functions using the web browser and checking the resul
 Once I had the connection with the API and the queries worked, I started to include them in the jupyter notebook:
 
 
-![Alt text](C:/Users/gnsg3/Desktop/Ironhack/Projects/Project_4.0/project-IV-sentiment-analysis-api/data/Jupyter_query_1.jpg)
+![Alt text](https://github.com/GuilleNes/project-IV-sentiment-analysis-api/blob/main/data/Jupyter_query_1.jpg)
 
 
-![Alt text](C:/Users/gnsg3/Desktop/Ironhack/Projects/Project_4.0/project-IV-sentiment-analysis-api/data/Jupyter_query_2.jpg)
+![Alt text](https://github.com/GuilleNes/project-IV-sentiment-analysis-api/blob/main/data/Jupyter_query_2.jpg)
 
 
-![Alt text](C:/Users/gnsg3/Desktop/Ironhack/Projects/Project_4.0/project-IV-sentiment-analysis-api/data/Jupyter_query_3.jpg)
+![Alt text](https://github.com/GuilleNes/project-IV-sentiment-analysis-api/blob/main/data/Jupyter_query_3.jpg)
 
 
 Using the average compound of the name query I could make a sentiment analysis of the tweets mentioning each member of the Royal Family. And here is the plot... 
 
-![Alt text](C:/Users/gnsg3/Desktop/Ironhack/Projects/Project_4.0/project-IV-sentiment-analysis-api/data/Jupyter_query_5.jpg)
+![Alt text](https://github.com/GuilleNes/project-IV-sentiment-analysis-api/blob/main/data/Jupyter_query_5.jpg)
 
 
 Finally, I post a new row in the df using the Post method:
 
-![Alt text](C:/Users/gnsg3/Desktop/Ironhack/Projects/Project_4.0/project-IV-sentiment-analysis-api/data/Jupyter_query_4.jpg)
+![Alt text](https://github.com/GuilleNes/project-IV-sentiment-analysis-api/blob/main/data/Jupyter_query_4.jpg)
 
 
 
