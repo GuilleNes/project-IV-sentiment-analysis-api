@@ -5,3 +5,5 @@
 .ipynb_checkpoints
 .env
 src.unused_functions.py
+src.Test.ipynb
+src.ipynb_checkpoints
