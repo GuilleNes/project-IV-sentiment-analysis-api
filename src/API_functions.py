@@ -12,12 +12,11 @@ sia = SentimentIntensityAnalyzer()
 def compound_by_name(name):
     try:
         url = f"http://127.0.0.1:9000/sql/people/{name}"
-        test = re.get(url).json()
-        df = pd.DataFrame.from_dict(test[0], orient= "index")
-        df = df.rename(columns = {0:'compound'})
-        return df    
+        test = re.get(url).json()[0]
+        df = pd.DataFrame.from_dict([test])
+        return df
     except Exception:
-        return "Seems that the value you have entered is not correct; try again"    
+        return "Seems that the value you have entered is not correct; try again"  
 
 
 # With this function, we search for the top ten tweets for the number of the given kind (likes, replies or retweets) and we add the compound

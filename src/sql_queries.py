@@ -44,7 +44,7 @@ def get_avg_name (name):
 # We make the query to get the top then tweets in MySQL database for number of retweets, replies or likes (and its compound)
 
 def get_top_ten (likes_retweets_replies):
-    query = f"""SELECT tweet, tweet_cleaned, name, {likes_retweets_replies} FROM queen_sentiment
+    query = f"""SELECT tweet, name, {likes_retweets_replies} FROM queen_sentiment
 	ORDER BY {likes_retweets_replies} DESC
     LIMIT 10"""
     df = pd.read_sql_query(query, engine)
@@ -52,6 +52,7 @@ def get_top_ten (likes_retweets_replies):
 
 
 # POST
+# We make a query in SQL from python to post a new row into our df
 
 def insert_one_row (name, tweet, compound):
     query = f"""INSERT INTO queen_sentiment
