@@ -4,7 +4,7 @@
 .vscode
 .ipynb_checkpoints
 .env
-src.unused_functions.py
-src.Test.ipynb
+unused_functions.py
+Test.ipynb
 src.ipynb_checkpoints
 readme1.md

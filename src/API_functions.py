@@ -33,7 +33,7 @@ def get_top_tweets(x):
 
 # With this function we look for the tweets with a positive index greater than the given number 
 
-def get_pos(numberpos):  # sourcery skip: inline-immediately-returned-variable
+def get_pos(numberpos):  
     try:
         url = f"http://127.0.0.1:9000/sql/pos/{numberpos}"
         return pd.json_normalize(re.get(url).json())
