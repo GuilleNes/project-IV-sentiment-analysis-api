@@ -47,15 +47,11 @@ def get_top (likes_retweets_replies):
 ####### POST
 
 @app.route("/insertrow", methods=["POST"])
-def try_post ():
-# Decoding params       
+def try_post ():     
     my_params = request.args
     name = my_params["name"]
     tweet = my_params["tweet"]
     compound = my_params["compound"]
-
-
-# Passing to my function: do the insert
     esecuele.insert_one_row(name, tweet, compound)
     return "Query succesfully inserted"
 
