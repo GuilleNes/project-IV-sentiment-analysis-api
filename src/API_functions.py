@@ -8,7 +8,6 @@ sia = SentimentIntensityAnalyzer()
 
 # With this function, we search for the compound of a specific person named on the tweets
 def compound_by_name():
-    new_dict = {}
     name = input("Which name would you like to look for?: ")
     try:
         url = f"http://127.0.0.1:9000/sql/people/{name}"
