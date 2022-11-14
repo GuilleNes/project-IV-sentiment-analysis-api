@@ -12,7 +12,7 @@
 > The main goal of this project is create our own API using MySQL to store our data allowing others to post new rows on it, querying to obtain the information we need and applying Sentiment Analysis over the diferent data that we have.
 
 
->In order to get and clean all the data, I have created a [main](https://github.com/GuilleNes/project-IV-sentiment-analysis-api/blob/main/main.ipynb) document, where the results of querying and post and several code [files](https://github.com/GuilleNes/project-IV-sentiment-analysis-api/tree/main/src) for the diferent functions for cleaning or connecting/querying to sql.
+>In order to get and clean all the data, I have created a [main](https://github.com/GuilleNes/project-IV-sentiment-analysis-api/blob/main/main.ipynb) document, with the results of querying and post; and several code [files](https://github.com/GuilleNes/project-IV-sentiment-analysis-api/tree/main/src) for the diferent functions for cleaning or connecting/querying to sql.
 
 
 **1. Cleaning Process**
