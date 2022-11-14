@@ -73,6 +73,9 @@ Finally, I post a new row in the df using the Post method:
 ![Alt text](https://github.com/GuilleNes/project-IV-sentiment-analysis-api/blob/main/data/Jupyter_query_4.jpg)
 
 
+![](<iframe src="https://giphy.com/embed/fUMsFIbDNjKg1I65dY" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/homeofcricket-london-mcc-lords-fUMsFIbDNjKg1I65dY">via GIPHY</a></p>)
+
+
 
 
 
